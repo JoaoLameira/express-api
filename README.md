@@ -25,3 +25,13 @@ run migration and give it a name
 ```
 npx prisma migrate dev --name init
 ```
+
+## Middlewares
+
+### Morgan
+
+morgan is a middleware that logs requests
+
+```
+npm i morgan --save
+```
