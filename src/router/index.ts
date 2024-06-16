@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express';
-import { customMiddleware } from './middlewares/custom';
+import { customMiddleware } from '~/middlewares/custom';
 
 const router = Router();
 
