@@ -19,7 +19,7 @@ export const createNewUser = async (req: Request, res: Response) => {
     if (e instanceof Prisma.PrismaClientKnownRequestError) {
       if (e.code === 'P2002') {
         res.status(400);
-        res.send(`Duplicate field value: ${e?.meta?.target}`);
+        res.send(`This ${e?.meta?.target} already exists!`);
         return;
       }
     }
